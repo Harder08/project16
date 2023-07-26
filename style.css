@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/media/thumb-1920-1056682.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.container {
+    width: 1000px;
+    height: 800px;
+    background-color: white;
+    margin: 50px;
+    display: flex;
+}
+
+.chats {
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    height: 600px;
+}
+
+
+img {
+    border-radius: 50%;
+    width: 50px;
+}
+
+.inbox {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    width: 330px;
+    border-right: 1px solid rgb(209, 209, 209);
+}
+
+.search {
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+
+input[type="search"] {
+    height: 50px;
+    border-radius: 50px;
+    outline: none;
+    border: 1px solid rgb(209, 209, 209);
+    padding: 10px;
+    background-color: hsl(204deg 15% 94%);
+}
+
+.search button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: hsl(199deg 100% 50%);
+    font-size: 20px;
+    border: none;
+}
+
+.real {
+    display: flex;
+    align-items: center;
+    width: 270px;
+    border-top: 1px solid  rgb(209, 209, 209);
+    padding: 10px 5px;
+    position: relative;
+}
+
+.real img {
+    margin-right: 20px;
+}
+
+.real p {
+    color: hsl(0deg 1% 65%);
+    font-size: 12px;
+}
+
+.real::before {
+    content: "8:08 AM";
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: hsl(0deg 1% 65%);
+    font-size: 10px;
+}
+
+#sp {
+    background-color: hsl(199deg 100% 50%);
+    color: white !important;
+}
+#sp p {
+    color: white;
+}
+
+#sp::before {
+    color: white;
+}
+
+.convirstion{
+    width: 670px;
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+}
+
+.header {
+    padding: 20px;
+    background-color: hsl(204deg 15% 94%);
+    color: hsl(0deg 1% 65%);
+}
+
+.header span {
+    color: black;
+    font-weight: bold;
+}
+
+.felx {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 740px;
+}
+
+.conv-container {
+    padding: 0 20px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.box {
+    width: fit-content;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+}
+
+
+.blue {
+    background-color: hsl(199deg 100% 50%);
+    color: white;
+
+}
+
+.box::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px;
+    background-color: transparent;
+    position: absolute;
+
+}
+
+.gray {
+    align-self: flex-end;
+    background-color: hsl(204deg 15% 94%);
+}
+
+.gray::after{
+    border-color: transparent  transparent transparent hsl(204deg 15% 94%);
+    right: -15px;
+}
+
+.blue::after {
+    border-color: transparent hsl(199deg 100% 50%) transparent transparent;
+    left: -15px;
+}
+.type {
+    height: 50px;
+    margin: 20px;
+    background-color: hsl(204deg 15% 94%);
+    border: 1px solid hsl(0deg 1% 65%);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+
+.type input {
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.fa-solid, .fa-regular {
+    margin: 0 10px;
+    color: hsl(0deg 1% 65%);
+}
+
+.type div {
+    right: 0;
+    position: absolute;
+}
+
+.date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 640px;
+    align-self: center;
+    padding: 20px;
+    font-weight: bold;
+    color: hsl(0deg 1% 65%);
+}
+
+.date p {
+    padding: 0 10px;
+}
+
+.date span {
+    width: 200px;
+    height: 1px;
+    background-color: rgb(212, 212, 212);
+}
